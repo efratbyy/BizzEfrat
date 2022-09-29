@@ -30,19 +30,17 @@ const cardSchema = joi.object({
 
       // add new card
       card = new Card(req.body);
+      // add cardId
       card.cardId = rndNumber;
+      // add userId
       card.userId = req.payload._id;
+
       await card.save();
   
       res.status(201).send(card);
     } catch (error) {
       res.status(400).send(error);
     }
-  });
-
-
-  const idSchema = joi.object({
-    cardId: joi.number().required()
   });
 
 
