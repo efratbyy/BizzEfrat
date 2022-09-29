@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 8000;
 app.use(express.json());
 
 // For browser requests
-//app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
 app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
