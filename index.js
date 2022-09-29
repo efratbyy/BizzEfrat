@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //app.engine("handlebars", engine());
-app.set("view engine", "handlebarss");
+app.set("view engine", "handlebars");
 app.set("views", "./views");
 
 app.use("/api/login", login);
