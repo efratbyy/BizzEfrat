@@ -1,0 +1,19 @@
+<div class="container">
+  <h1 class="display-3 justify-content-center d-flex justify-content-center">SIGN IN</h1>
+  <h3 class="d-flex justify-content-center">Sign in with your Biz account</h3>
+  <form method="POST" action="/api/login" novalidate="novalidate"> 
+    <div class="form-group my-2">
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email" class="form-control" placeholder="Email"/>
+    </div>
+    <div class="form-group my-2">
+      <label for="password">Password: </label>
+      <input type="password" id="password" name="password" class="form-control" />
+    </div>
+    <div class="d-flex justify-content-center">
+    <button type="submit" class="btn btn-secondary">Sign in</button>
+    </div> 
+ </form>
+  <br>
+  <a href="./register" class="d-flex justify-content-center">To Register</a>
+</div>
