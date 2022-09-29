@@ -19,7 +19,7 @@ app.use(express.json());
 // For browser requests
 app.use(express.urlencoded({ extended: true }));
 
-app.engine("handlebars", engine());
+//app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
 app.set("views", "./views");
 
